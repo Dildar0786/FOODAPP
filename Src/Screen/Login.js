@@ -31,11 +31,11 @@ const Login = ({ navigation }) => {
             Login
           </Text>
           <View style={styles.Vi_inp}>
-            <TextInput placeholder='Email' style={styles.input}   onChange={(e)=>setemail(e)}/>
+            <TextInput placeholder='Email' style={styles.input}   onChange={setemail}/>
             {error?.Email== null?"" :<Text style={styles.txt_color}>{error?.Email}</Text>}
           </View>
           <View style={styles.Vi_inp}>
-            <TextInput placeholder='password' style={styles.input} onChange={(e)=>setpassword(e)} />
+            <TextInput placeholder='password' style={styles.input} onChange={setpassword} />
             {error?.Password== null?"" :<Text style={styles.txt_color}>{error?.Password}</Text>}
           </View>
           <View>

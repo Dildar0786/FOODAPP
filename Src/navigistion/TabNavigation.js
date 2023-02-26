@@ -15,7 +15,7 @@ const TabNavigatoin = () => {
         tabBarActiveTintColor: '#e91e63',
         tabBarShowLabel:'treu',
         tabBarInactiveBackgroundColor:"grey",
-        tabBarHideOnKeyboard:false,
+        tabBarHideOnKeyboard:true,
       
         // tabBarBadge​:2,
       }}

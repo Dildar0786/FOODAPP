@@ -1,13 +1,12 @@
-import { StyleSheet, Text, View ,Image,TextInput} from 'react-native'
+import { StyleSheet, Text, View ,Image,TextInput, ScrollView} from 'react-native'
 import React from 'react'
 import { ImagePath } from '../assets/index'
-import FormContainer from '../componts/FormContainer'
 
 const Singup = ({navigation}) => {
   
   return ( 
+<ScrollView>
     <View>
-      <FormContainer>
       <View style={styles.View_contner}>
         <Image source={ImagePath.scotter} />
        
@@ -17,6 +16,7 @@ const Singup = ({navigation}) => {
           <Text style={styles.Txt_login}>
             Login
           </Text>
+
           <View style={styles.Vi_inp}>
             <TextInput placeholder='Email' style={styles.inp_1} />
           </View>
@@ -43,10 +43,11 @@ const Singup = ({navigation}) => {
 
           </View>
         </View>
-
+ 
       </View>
-      </FormContainer>
+
     </View>
+    </ScrollView>
   )
 }
 
@@ -54,12 +55,12 @@ export default Singup
 
 const styles = StyleSheet.create({
   View_contner:{
-    borderWidth: 2,
+    // borderWidth: 2,
      borderColor: 'red',
-      width: "100%", 
-      height: 350,
-       borderBottomLeftRadius: 60,
-        alignItems: 'center',
+      // width: "100%", 
+      // height: 350,
+    //    borderBottomLeftRadius: 60,
+    //     alignItems: 'center',
          backgroundColor: '#FF0059'
   },
   box:{
